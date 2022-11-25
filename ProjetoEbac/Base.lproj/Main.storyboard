@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjetoEbac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSh-qd-Zqn">
+                                <rect key="frame" x="45" y="222" width="300" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Captura de Tela 2022-11-16 às 11.19.31" translatesAutoresizingMaskIntoConstraints="NO" id="D7d-hX-xx4">
+                                        <rect key="frame" x="20" y="100" width="260" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Qi2-cg-98K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-ul-fwZ">
+                                        <rect key="frame" x="131.66666666666666" y="54" width="36.666666666666657" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HWK-AM-gQp"/>
+                                    <constraint firstItem="D7d-hX-xx4" firstAttribute="centerY" secondItem="vSh-qd-Zqn" secondAttribute="centerY" id="J3W-ud-mML"/>
+                                    <constraint firstItem="D7d-hX-xx4" firstAttribute="centerX" secondItem="vSh-qd-Zqn" secondAttribute="centerX" id="J5e-Ew-mPW"/>
+                                    <constraint firstItem="D7d-hX-xx4" firstAttribute="leading" secondItem="vSh-qd-Zqn" secondAttribute="leading" constant="20" id="P6Z-cP-MMh"/>
+                                    <constraint firstAttribute="height" constant="400" id="TgR-hz-D4d"/>
+                                    <constraint firstAttribute="trailing" secondItem="D7d-hX-xx4" secondAttribute="trailing" constant="20" id="UuY-at-pRi"/>
+                                    <constraint firstItem="D7d-hX-xx4" firstAttribute="top" secondItem="Oat-ul-fwZ" secondAttribute="bottom" constant="25" id="cCI-R9-lDb"/>
+                                    <constraint firstItem="Oat-ul-fwZ" firstAttribute="centerX" secondItem="vSh-qd-Zqn" secondAttribute="centerX" id="wPs-5L-1oz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vSh-qd-Zqn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XoC-WK-IgX"/>
+                            <constraint firstItem="vSh-qd-Zqn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaZ-KN-AfC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-28.436018957345969"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Captura de Tela 2022-11-16 às 11.19.31" width="310" height="224"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
